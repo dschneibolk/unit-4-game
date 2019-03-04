@@ -37,19 +37,19 @@ $(document).ready(function(){
     function initializeReset (){
       crystalOne = $("[data-id=1]");
       crystalOne.data("data-value", crystalRandom()); 
-      console.log("Crystal 1: " + crystalOne.data("data-value"));
+      // console.log("Crystal 1: " + crystalOne.data("data-value"));
       crystalTwo = $("[data-id=2]");
       crystalTwo.data("data-value", crystalRandom()); 
-      console.log("Crystal 2: " + crystalTwo.data("data-value"));
+      // console.log("Crystal 2: " + crystalTwo.data("data-value"));
       crystalThree = $("[data-id=3]");
       crystalThree.data("data-value", crystalRandom()); 
-      console.log("Crystal 3: " + crystalThree.data("data-value"));
+      // console.log("Crystal 3: " + crystalThree.data("data-value"));
       crystalFour = $("[data-id=4]");
       crystalFour.data("data-value", crystalRandom()); 
-      console.log("Crystal 4: " + crystalFour.data("data-value"));
+      // console.log("Crystal 4: " + crystalFour.data("data-value"));
       setTarget();
       total = 0;
-      console.log("Target: " + target);
+      // console.log("Target: " + target);
       $("#total").html("Total: " + total);
       $("#wins").html("Wins: " + wins);
       $("#losses").html("Losses: " + losses);
@@ -59,11 +59,11 @@ $(document).ready(function(){
     if (total === target) {
       wins++;
       $("#wins").html("Wins: " + wins);
-      console.log("You win!");
+      // console.log("You win!");
     } else {
       losses++;
       $("#losses").html("Losses: " + losses);
-      console.log("You lose!");
+      // console.log("You lose!");
     }
     initializeReset(); 
   }

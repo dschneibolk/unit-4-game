@@ -1,0 +1,24 @@
+.container{
+    padding: 50px;
+    width: 100%;
+}
+
+#row1 {
+    background:grey;
+    padding: 30px;
+}
+
+.wrapper {
+    background: lightslategray;
+    width:100%;
+}
+
+body {
+    background: lightcyan;
+    margin-top:175px;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+}

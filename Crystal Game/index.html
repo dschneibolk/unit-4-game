@@ -9,42 +9,51 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-    <script src="./assets/javascript/game.js"></script>
+    <link rel= "stylesheet" type = "text/css" href = "assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="jumbotron col-12">
-                Instructions
+    <div class = "wrapper">
+        <div class="container">
+            <div class="row">
+                <div id = "row1">
+                    <div class="jumbotron col-12 bg-dark text-white text-center">
+                        <p>There are four crystals below. By clicking on a crystal you will 
+                        add a specific amount of points to your total score. You win the game by matching
+                        your total score to a random number, you lose the game 
+                        if your total score goes above the random number. The value of each crystal is hidden
+                        from you until you click on it. Each time when the game starts, the game 
+                        will change the values of each crystal
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6" id="target">Target: </div>
-            <div class="col-6" id="total">Total: </div>
-        </div>
-        <div class="row">
-            <div class="col-3 bg-danger">
-                <div class="btn btn-light btn-block" data-id=1 data-value=0>Red</div>
+            <div class="row">
+                    <div class="col-6 bg-dark text-white" id="target">Target: </div>
+                    <div class="col-6 bg-dark text-white" id="total">Total: </div>
             </div>
-                
-            <div class="col-3 bg-primary">
-                <div class="btn btn-light btn-block" data-id=2 data-value=0>Blue</div>
+            <div class="row">
+                <div class="col-3 bg-dark">
+                    <div class="btn btn-light btn-block" data-id=1 data-value=0>Red</div>
+                </div>
+                    
+                <div class="col-3 bg-dark">
+                    <div class="btn btn-light btn-block" data-id=2 data-value=0>Blue</div>
+                </div>
+                <div class="col-3 bg-dark">
+                    <div class="btn btn-light btn-block" data-id=3 data-value=0>Green</div>
+                </div>
+                <div class="col-3 bg-dark">
+                    <div class="btn btn-light btn-block" data-id=4 data-value=0>Yellow</div>
+                </div>
             </div>
-            <div class="col-3 bg-success">
-                <div class="btn btn-light btn-block" data-id=3 data-value=0>Green</div>
+            <div class="row">
+                <div class="col-6 bg-dark text-white" id="wins">Wins: </div>
+                <div class="col-6 bg-dark text-white" id="losses">Losses: </div>
             </div>
-            <div class="col-3 bg-warning">
-                <div class="btn btn-light btn-block" data-id=4 data-value=0>Yellow</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6" id="wins">Wins: </div>
-            <div class="col-6" id="losses">Losses: </div>
         </div>
     </div>
-    
-    <script type="text/javascript" src="script.js"></script>
+    <script src="./assets/javascript/game.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
