@@ -1,11 +1,14 @@
 .container{
     padding: 50px;
     width: 100%;
+    margin-bottom: 0 auto;
 }
 
 #row1 {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background:grey;
-    padding: 30px;
+
 }
 
 .wrapper {
@@ -14,11 +17,18 @@
 }
 
 body {
-    background: lightcyan;
-    margin-top:175px;
+    background: lightslategray;
+    margin-top:0 auto;
+    margin-bottom: 0 auto;
 }
 
 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 23px;
+}
+
+#row3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
 }
